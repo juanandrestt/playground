@@ -1,19 +1,58 @@
 @font-face {
-    font-family: 'Outfit';
-    src: url('https://fonts.google.com/specimen/Outfit');
-    font-weight: 400;
-    font-style: normal;
+	font-family: "Outfit";
+	src: url("https://fonts.google.com/specimen/Outfit");
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: "Outfit", sans-serif;
+	background-color: rgb(200, 215, 220);
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	width: 40dvh;
+	height: 60dvh;
+	border-radius: 15px;
 }
 
-.container > img {
-    font-size: 38px;
+.container img {
+	width: 250px;
+	margin: 30px 0 10px 0;
+	border-radius: 15px;
+}
+
+.container h1 {
+	font-size: 1.2rem;
+	padding: 0 10px 0;
+	margin: 10px 0 0;
+}
+
+.container p {
+	font-size: 1rem;
+	padding: 0 10px 20px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	align-self: flex-end;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
